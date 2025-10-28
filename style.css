@@ -1,0 +1,126 @@
+/* Overall Page */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #74b9ff, #81ecec);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 50px;
+}
+
+/* Main Box */
+.container {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 350px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0984e3;
+}
+
+/* Input Area */
+.input-area {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.input-area button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #0984e3;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-area button:hover {
+  background: #74b9ff;
+}
+
+.delete-all {
+  background: #d63031;
+}
+
+.delete-all:hover {
+  background: #ff7675;
+}
+
+/* Todo List */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  background: #f1f2f6;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.list li:hover {
+  background: #dfe6e9;
+}
+
+.list input {
+  border: none;
+  background: transparent;
+  color: #2d3436;
+  font-size: 16px;
+  width: 65%;
+}
+
+.list input:focus {
+  outline: none;
+  border-bottom: 2px solid #0984e3;
+}
+
+.list button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.list .edit-btn {
+  background: #00b894;
+  color: white;
+}
+
+.list .edit-btn:hover {
+  background: #55efc4;
+}
+
+.list .delete-btn {
+  background: #d63031;
+  color: white;
+}
+
+.list .delete-btn:hover {
+  background: #ff7675;
+}
