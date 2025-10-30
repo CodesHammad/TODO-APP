@@ -9,15 +9,8 @@ function addTodo() {
     return;
   }
 
-  list.innerHTML += `
-    <li>
-      <input type="text" value="${todoText}" disabled />
-      <div>
-        <button class="edit-btn" onclick="editTodo(event)">Edit</button>
-        <button class="delete-btn" onclick="deleteTodo(event)">Delete</button>
-      </div>
-    </li>
-  `;
+  list.innerHTML +=
+    "<li>" + "<input type='text' value='" + todoText + "' disabled>" + "<div>" + "<button onclick='editTodo(event)'>Edit</button>" + "<button onclick='deleteTodo(event)'>Delete</button>" + "</div>" + "</li>";
 
   todoInput.value = "";
 }
